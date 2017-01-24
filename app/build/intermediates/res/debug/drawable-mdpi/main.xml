@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bitmap
+    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:src="@drawable/main_back"
+	android:dither="true" /><!-- From: file:/C:/Users/Chaitanya/StudioProjects/FitnessBuddy2Go/app/src/main/res/drawable-mdpi/main.xml -->

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exerciselist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:gravity="center_vertical"
+    android:background="?android:attr/activatedBackgroundIndicator"
+
+/>
+<!-- From: file:/C:/Users/Chaitanya/StudioProjects/FitnessBuddy2Go/app/src/main/res/layout/exercise_library_list.xml -->

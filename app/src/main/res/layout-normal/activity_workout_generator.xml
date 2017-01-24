@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".WorkoutGenerator" >
+    
+      <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+      
+    <ScrollView
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:scrollbars="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true" >
+    
+<RelativeLayout
+    android:id="@+id/RelativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="25dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_list_border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/height"
+        android:textColor="#CCC610"
+        android:inputType="number"
+        android:textSize="12sp"
+        android:width="95dip" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="25dip"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/height"
+        android:background="@drawable/button_list_border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/age"
+        android:textColor="#CCC610"
+        android:inputType="number"
+        android:textSize="12sp"
+        android:width="60dip" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="25dip"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/height"
+        android:background="@drawable/button_list_border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/weight"
+        android:textColor="#CCC610"
+        android:inputType="number"
+        android:textSize="12sp"
+        android:width="102dip" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/selfassess"
+        android:layout_width="wrap_content"
+        android:layout_height="25dip"
+        android:layout_below="@+id/height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_list_border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/selfassess"
+        android:textColor="#CCC610"
+        android:inputType="number"
+        android:textSize="12sp"
+        android:width="310dip" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/GeneratorList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Generate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/generator_list_border"
+        android:ems="10"
+        android:focusable="false"
+        android:textIsSelectable="false"
+        android:longClickable="false"
+        android:inputType="textFilter|textMultiLine"
+        android:lines="22"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:width="230dip" />
+
+    <Button
+        android:id="@+id/GoToExerciseLibrary"
+        android:layout_width="200dip"
+        android:layout_height="30dip"
+        android:layout_below="@+id/GeneratorList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/wg_button_bg2"
+        android:height="80dip"
+        android:text="@string/GoToExerciseLibrary"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:width="180dip" />
+
+    <Button
+        android:id="@+id/Generate"
+        android:layout_width="100dip"
+        android:layout_height="30dip"
+        android:layout_below="@+id/selfassess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/wg_button_bg2"
+        android:text="@string/Generate"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+</RelativeLayout>
+</ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,19 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:scrollbars="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+<TextView 
+    android:id="@+id/exercise_detail"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:textIsSelectable="false"
+    android:scrollbars="vertical"/>
+
+</ScrollView>
+
+<!-- From: file:/C:/Users/Chaitanya/StudioProjects/FitnessBuddy2Go/app/src/main/res/layout/fragment_exercise_detail.xml -->

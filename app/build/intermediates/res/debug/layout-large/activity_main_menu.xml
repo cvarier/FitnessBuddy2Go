@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".MainMenu" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <Button
+            android:id="@+id/create_my_workout"
+            android:layout_width="265dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="90dp"
+        	android:background="@drawable/button_list_border_main1"
+            android:text="@string/createmyworkout_button"
+            android:layout_above="@id/view_exercise_library"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/open_guide"
+            android:layout_width="265dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/view_exercise_library"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/button_list_border_main3"
+            android:text="@string/guide_button"
+            android:textColor="#000000"
+            android:textSize="42sp" />
+
+        <Button
+            android:id="@+id/view_exercise_library"
+            android:layout_width="265dp"
+            android:layout_height="110dp"
+            android:background="@drawable/button_list_border_main2"
+            android:text="@string/exercise_library_button"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"
+            android:textSize="38sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+<!-- From: file:/C:/Users/Chaitanya/StudioProjects/FitnessBuddy2Go/app/src/main/res/layout-large/activity_main_menu.xml -->

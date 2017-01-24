@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Chaitanya/StudioProjects/FitnessBuddy2Go/app/src/main/res/values-normal/ab_height.xml -->
+    <eat-comment/>
+    <dimen name="ab_height">38dp</dimen>
+    <!-- From: file:/C:/Users/Chaitanya/StudioProjects/FitnessBuddy2Go/app/src/main/res/values-normal/ab_text_size.xml -->
+    <eat-comment/>
+    <dimen name="ab_text_size">16sp</dimen>
+    <!-- From: file:/C:/Users/Chaitanya/StudioProjects/FitnessBuddy2Go/app/src/main/res/values-normal/alert_button_textsize.xml -->
+    <eat-comment/>
+    <dimen name="alert_button_textsize">10sp</dimen>
+    <!-- From: file:/C:/Users/Chaitanya/StudioProjects/FitnessBuddy2Go/app/src/main/res/values-normal/alert_message_text_size.xml -->
+    <eat-comment/>
+    <dimen name="alert_message_text_size">15sp</dimen>
+</resources>

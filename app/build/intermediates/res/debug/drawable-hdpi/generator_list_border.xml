@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:top="1dp" android:bottom="1dp">
+        <shape 
+        android:shape="rectangle">
+            <stroke android:width="5dp" android:color="#2D7A0F" />
+            <solid android:color="#E8E8E8" />
+        </shape>        
+    </item>
+    
+</layer-list>
+<!-- From: file:/C:/Users/Chaitanya/StudioProjects/FitnessBuddy2Go/app/src/main/res/drawable-hdpi/generator_list_border.xml -->

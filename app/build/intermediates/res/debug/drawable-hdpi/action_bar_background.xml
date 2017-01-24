@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <gradient
+            android:startColor="#A1A1A1"
+            android:centerColor="#E3E3E3"
+            android:endColor="#ABABAB"
+            android:angle="270" />
+</shape>
+<!-- From: file:/C:/Users/Chaitanya/StudioProjects/FitnessBuddy2Go/app/src/main/res/drawable-hdpi/action_bar_background.xml -->

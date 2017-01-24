@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="1dp" android:bottom="1dp" android:state_pressed="true">
+        <shape 
+        android:shape="rectangle">
+            <stroke android:width="2dp" android:color="#163EB5" />
+            <solid android:color="#CCFFCC" />
+            <corners android:bottomRightRadius="6dip"
+        	android:bottomLeftRadius="6dip"  
+        	android:topRightRadius="6dip"
+        	android:topLeftRadius="6dip"/>
+            <gradient
+            android:startColor="#7A7A7A"
+            android:endColor="#424242"
+            android:angle="270" />
+        </shape>
+    </item>
+    <item android:top="1dp" android:bottom="1dp">
+        <shape 
+        android:shape="rectangle">
+            <stroke android:width="2dp" android:color="#163EB5" />
+            <solid android:color="#CCFFCC" />
+            <corners android:bottomRightRadius="6dip"
+        	android:bottomLeftRadius="6dip"  
+        	android:topRightRadius="6dip"
+        	android:topLeftRadius="6dip"/>
+            <gradient
+            android:startColor="#E0E0E0"
+            android:endColor="#737373"
+            android:angle="270" />
+        </shape>
+    </item>
+</selector><!-- From: file:/C:/Users/Chaitanya/StudioProjects/FitnessBuddy2Go/app/src/main/res/drawable-tvdpi/wg_button_bg3.xml -->

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+    </style>
+    
+    <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/action_bar_background</item>
+        <item name="android:height">@dimen/ab_height</item>
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+    </style>
+    
+    <style name="TitleTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/ab_text_size</item>
+	</style>
+	
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Dialog">
+    </style>
+
+
+</resources>

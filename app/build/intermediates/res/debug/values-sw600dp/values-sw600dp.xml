@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Chaitanya/StudioProjects/FitnessBuddy2Go/app/src/main/res/values-sw600dp/refs.xml -->
+    <eat-comment/>
+    <item name="activity_exercise_list" type="layout">@layout/activity_exercise_twopane</item>
+</resources>

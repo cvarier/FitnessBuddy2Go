@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".WorkoutGenerator" >
+    
+      <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+      
+    <ScrollView
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:scrollbars="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true" >
+    
+<RelativeLayout
+    android:id="@+id/RelativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >   
+
+    
+    <EditText
+        android:id="@+id/height"
+        android:width="145dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/button_list_border"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="@string/height"
+        android:inputType="number" >
+
+
+    </EditText>
+    
+        <EditText
+        android:id="@+id/age"
+        android:width="90dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_toLeftOf="@id/height"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_list_border"
+        android:gravity="center_horizontal"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="@string/age"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/weight"
+        android:width="158dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/height"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_list_border"
+        android:gravity="center_horizontal"  
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="@string/weight"
+        android:inputType="number" >
+
+    </EditText>
+    
+        <EditText
+        android:id="@+id/selfassess"
+        android:width="505dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_list_border"
+        android:gravity="center_horizontal"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="@string/selfassess"
+        android:inputType="number" >
+        
+        </EditText>
+
+    <EditText
+        android:id="@+id/GeneratorList"
+        android:width="300dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Generate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+       	android:background="@drawable/generator_list_border"
+       	android:textColor="#000000"
+       	android:focusable="false"
+        android:textIsSelectable="false"
+        android:longClickable="false"
+       	android:lines="22"
+        android:ems="10"
+        android:inputType="textFilter|textMultiLine" />
+
+    <Button
+        android:id="@+id/GoToExerciseLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:width="270dip"
+		android:layout_centerHorizontal="true"
+        android:layout_below="@+id/GeneratorList"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/wg_button_bg"
+        android:text="@string/GoToExerciseLibrary"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/Generate"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selfassess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/wg_button_bg"
+        android:text="@string/Generate"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+    
+</RelativeLayout>
+</ScrollView>
+
+</FrameLayout>
+<!-- From: file:/C:/Users/Chaitanya/StudioProjects/FitnessBuddy2Go/app/src/main/res/layout/activity_workout_generator.xml -->

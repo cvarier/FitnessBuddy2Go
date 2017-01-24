@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ChaitanyaVarier.FitnessBuddy2Go"
+    android:versionCode="3"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ChaitanyaVarier.FitnessBuddy2Go.MainMenu"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ChaitanyaVarier.FitnessBuddy2Go.WorkoutGenerator"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/workout_generator_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="com.ChaitanyaVarier.FitnessBuddy2Go.WorkoutGenerator" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ChaitanyaVarier.FitnessBuddy2Go.Info"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/info_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="com.ChaitanyaVarier.FitnessBuddy2Go.Info" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ChaitanyaVarier.FitnessBuddy2Go.ExerciseListActivity"
+            android:label="@string/title_exercise_list"
+            android:parentActivityName="com.ChaitanyaVarier.FitnessBuddy2Go.MainMenu" >
+            <intent-filter>
+                <action android:name="com.ChaitanyaVarier.FitnessBuddy2Go.ExerciseLibrary" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ChaitanyaVarier.FitnessBuddy2Go.MainMenu" />
+        </activity>
+        <activity
+            android:name="com.ChaitanyaVarier.FitnessBuddy2Go.ExerciseDetailActivity"
+            android:label="@string/title_exercise_detail"
+            android:parentActivityName="com.ChaitanyaVarier.FitnessBuddy2Go.ExerciseListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ExerciseListActivity" />
+        </activity>
+    </application>
+
+</manifest>

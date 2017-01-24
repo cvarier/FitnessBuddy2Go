@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".WorkoutGenerator" >
+    
+      <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+      
+    <ScrollView
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:scrollbars="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true" >
+    
+<RelativeLayout
+    android:id="@+id/RelativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_list_border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/height"
+        android:textColor="#CCC610"
+        android:inputType="number"
+        android:textSize="30sp"
+        android:width="245dip" >
+
+    </EditText>
+    
+        <EditText
+        android:id="@+id/selfassess"
+        android:width="775dip"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_below="@+id/height"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_list_border"
+        android:gravity="center_horizontal|center_vertical"
+        android:ems="10"
+        android:textSize="30sp"
+        android:hint="@string/selfassess"
+        android:textColor="#CCC610"
+        android:inputType="number" >
+        
+        </EditText>
+
+    <EditText
+        android:id="@+id/GeneratorList"
+        android:width="500dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Generate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+       	android:background="@drawable/generator_list_border"
+       	android:textColor="#000000"
+       	android:focusable="false"
+        android:textIsSelectable="false"
+        android:longClickable="false"
+       	android:lines="22"
+        android:ems="10"
+        android:textSize="28sp"
+        android:inputType="textFilter|textMultiLine" />
+
+    <Button
+        android:id="@+id/GoToExerciseLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="110dip"
+		android:width="290dip"
+		android:layout_centerHorizontal="true"
+        android:layout_below="@+id/GeneratorList"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/wg_button_bg4"
+        android:text="@string/GoToExerciseLibrary"
+        android:textColor="#000000"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/Generate"
+        android:layout_width="200dip"
+        android:layout_height="60dip"
+        android:layout_below="@+id/selfassess"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/wg_button_bg4"
+        android:text="@string/Generate"
+        android:textColor="#000000"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_above="@+id/selfassess"
+        android:layout_toLeftOf="@+id/height"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_list_border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/age"
+        android:textColor="#CCC610"
+        android:inputType="number"
+        android:textSize="30sp"
+        android:width="160dip" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="250dip"
+        android:layout_height="50dip"
+        android:layout_above="@+id/selfassess"
+        android:layout_toRightOf="@+id/height"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/button_list_border"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/weight"
+        android:textColor="#CCC610"
+        android:inputType="number"
+        android:textSize="30sp"
+        android:width="220dip" >
+
+        <requestFocus />
+    </EditText>
+    
+</RelativeLayout>
+</ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Chaitanya\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\Users\Chaitanya\StudioProjects\FitnessBuddy2Go\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-4e09ab76f3ddff13079a33fd54d06b6200b414b2.jar" />
+    </item>
+
+</items>
