@@ -5,4 +5,4 @@ Unlike most workout generating physical fitness apps on the market, FitnessBuddy
 
 The app features thirty exercises grouped into three categories: strength, endurance, and balance + flexibility, all of which can be accessed and viewed in the included exercise library. All the descriptions of the exercises are handwritten.
 
-Get the app from the Play Store now:https://play.google.com/store/apps/details?id=com.ChaitanyaVarier.FitnessBuddy2Go
+Get the app from the Play Store now: https://play.google.com/store/apps/details?id=com.ChaitanyaVarier.FitnessBuddy2Go
